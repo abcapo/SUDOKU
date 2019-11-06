@@ -7,10 +7,9 @@ class Interfaz(Sudoku):
         lista = api(9)
         self.sudoku = Sudoku(lista)
 
-    print('\t')
-    print("Bienvenido al SUDOKU")
-
     def display(self):
+        print('\t')
+        print("SUDOKU")
         u = 0
         for i in range(1):
             print('\t')
@@ -63,7 +62,7 @@ class Interfaz(Sudoku):
                 print("Posición original, ingrese ota posición")
 
             self.sudoku.val_variables(number, x, y)
-        print("GANASTE")
+        print("HAS GANADO")
 
     def validate(self, number):
         try:
